@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd"
+         version="6.1">
+
+    <servlet>
+        <servlet-name>PlayRegServlet</servlet-name>
+        <!-- This must point to the fully qualified package name -->
+        <servlet-class>PlayRegServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PlayRegServlet</servlet-name>
+        <!-- The browser URL pattern -->
+        <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PlayerListServlet</servlet-name>
+        <servlet-class>PlayerListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PlayerListServlet</servlet-name>
+        <url-pattern>/players</url-pattern>
+    </servlet-mapping>
+
+</web-app>
